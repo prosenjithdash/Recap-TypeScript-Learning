@@ -1,5 +1,4 @@
 // spread operator
-
 const friends = ['labib', 'kishore', '[proshato']
 const uniFriends = ['bilash', 'apurbo']
 const jobFriends = ['asif', 'aksh', 'tomal']
