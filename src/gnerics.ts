@@ -21,7 +21,13 @@ const isEligibleList: GenericArray<boolean> = [true, false, true];
 
 
 // Generics Use for Array of object
-const userList:GenericArray<{name:string,age:number}> = [
+type User =
+    {
+    name: string,
+    age: number
+    }
+    
+const userList:GenericArray<User> = [
     {
         name: 'x',
         age: 23
