@@ -24,3 +24,27 @@ add('7', '9')
 add(9, '9')
 
 
+// in guard
+
+type NormalUser = {
+    name: string;
+}
+
+type AdminUser = {
+    name: string;
+    role: 'Admin'
+}
+
+const getUserInfo = (user: NormalUser | AdminUser) => {
+
+    // type guard with in
+    if ('role' in user) {
+            console.log(`${user.name} and his role is : ${user.role}`)
+
+    } else {
+        console.log(`This ${user.name}`)
+    }
+
+}
+
+getUserInfo({name:'Normal', role:'Admin'})
