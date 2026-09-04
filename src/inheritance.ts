@@ -23,9 +23,9 @@ class Parent{
 
 class Student extends Parent{
     // // parameter define
-    // name: string;
-    // age: number;
-    // address: string;
+    // name: string; // common
+    // age: number; // common
+    // address: string; // common
 
     // // parameter iniselize
     // constructor(name: string, age: number, address: string) {
@@ -49,10 +49,10 @@ student1.getSleep(9);
 // 2nd class
 
 class Teacher extends Parent{
-    // parameter define
-    // name: string;
-    // age: number;
-    // address: string;
+    // parameter define // common
+    // name: string; // common
+    // age: number; // common
+    // address: string; // common
     designation: string; // own property
 
     // // parameter iniselize
